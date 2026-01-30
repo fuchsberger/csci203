@@ -27,4 +27,6 @@
 Attempt to recreate the following spiral using what you have learned.
 Remember to follow the best practices of a good algorithm.
 
+![Spiral](spiral.png)
+
 ### Exercise 3
