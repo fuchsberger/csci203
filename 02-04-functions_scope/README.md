@@ -112,21 +112,44 @@ Example from the Reading:
 ```python
 def bloom(tortoise, fill_color, length):
   def stem(tortoise, length):
-    def flower(tortoise, fill_color, length):
-      bloom(tortoise, fill_color, length)
-      stem(tortoise, length)
+    pass
+
+  stem(tortoise, length)
 ```
 
-TODO discuss in class
+**Never nest functions inside each other!** The inner function would only be accessible from within bloom. Functions should always be on _global_ scope.
 
-### Organizing Code into functions
+### Exercise 1: Organizing Code into functions
 
-TODO in class
+**Objective:** organize the following algorithm by using a function to avoid repetition and code clarity:
 
-### ADT
+```python
+import turtle
 
-TODO in class
+george = turtle.Turtle()
 
-### Code Style
+george.up()
+george.set_pos(20, 20)
+george.down()
+george.fillcolor("green")
+george.begin_fill()
+george.circle(30)
+george.end_fill()
+george.up()
+george.set_pos(30, 40)
+george.down()
+george.fillcolor("blue")
+george.begin_fill()
+george.circle(45)
+george.end_fill()
+```
 
-TODO in class
+#### General Procedure
+
+- identify repeating blocks of code (may have some variety in variable values such as `radius`, `x`, or `y`).
+- create a function with an appropriate name and copy over the repeating lines.
+- provide variable parts as input variables (parameters) and replace the hard-coded values in the text with them.
+- add a function call(s) with the actual values after your function definition
+- get rid of the original relevant code that is not in a function
+
+A solution is provide under `exercise1.py`.
