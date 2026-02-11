@@ -1,8 +1,20 @@
 ## ADT
 
-```text
-TODO in class
-```
+An ADT is a detailed descripton of a data structure and how it behaves.
+It should contain information of the functions it has and how data is stored.
+
+**Example 1:** Custom ADT
+
+A shopping Bag (also called a stack)
+
+- can store multiple items up until it is full.
+- function: add something to the bag
+- function: remove the most recently added item
+
+**Example 2** Python Native ADT: an Integer
+
+- Stores a Full Number, size only limited by available Memory
+- provides functions for aritmethic operations
 
 ## main function
 
@@ -38,70 +50,64 @@ Modify the program above to use a main function, while still displaying both cir
 
 The solution can be found under `exercise1.py`.
 
-## Functions: Docstrings
+## Functions: Docstrings, iterating over lists
 
 ```python
-# TODO
+def print_sum(numbers):
+  """Given a list of numbers, prints the total sum.
+
+  Parameters:
+    - `numbers`, a list of float and/or integer numbers
+
+  Return Value:
+    - None
+  """
+  total = 0
+  for number in numbers:
+    total = total + number
+  print(total)
 ```
 
-## Functions: Return Value
+A proper docstring should have the following three components:
 
-Functions may give information back to the main program:
+- A 1/2 liner describing the **purpose** of the function
+- A list of _parameters_ and a short description of them
+- The _return_ value of the function
+
+There are no exact rules on how to format your docstring but you will want to
+
+- keep those three in this order
+- be consistent accross your program and always use the same format. For example: Don't use `'''` sometimes and othertimes `"""`
+
+## Comments
+
+Idealy functions are short and do exactly what the function name implies they do (and nothing else).
+Thus providing a docstring is usually enough documentation for a function.
+
+However sometimes we have more complex sections within our code or need to clarify a line that follows. In such cases a comment comes in handy:
 
 ```python
-# TODO
+def print_sum(numbers):
+  """Given a list of numbers, prints the total sum.
+
+  Parameters:
+    - `numbers`, a list of float and/or integer numbers
+
+  Return Value:
+    - None
+  """
+  total = 0
+  for number in numbers:
+    # x += 1 is a shorthand for x = x + 1
+    total += number
+  print(total)
 ```
 
-### Exercise 2
-
-Try out the following program:
+A comment usually refers to the line that immeadiatly follows but can be on the same line:
 
 ```python
-def ceasar(message):
-    """
-    TODO by students...
-    """
-    result = ""
-    for letter in message:
-        code = ord(letter)
-        new_code = code + 1
-        new_letter = chr(new_code)
-        result = result + new_letter
-    return result
+# horizontal coordinate (better)
+x = 10
 
-def main():
-  greeting = "Hello"
-
-  print(greeting)
-  print(ceasar(greeting))
-
-main()
-```
-
-Observe the shell output.
-Your objective is to deduce what this function does and provide an appropriate docstring, including a description of the parameters and what it returns.
-
-#### Tips
-
-- Do not ask AI or search for what `ord()` and `char()` do.
-- Instead be curious and try the following out in your program deduce from there:
-
-```python
-print(ord("A"))
-print(ord("B"))
-print(ord("C"))
-print(chr(65))
-print(chr(66))
-print(chr(67))
-```
-
-What seems to be the purpose of the ord() function?
-What seems to be the purpose of the chr() function?
-
-### Exercise 3:
-
-Based on the `encyrpt()` function you have seen. Write a function `decrypt()` that will reverse what the function encrypt() does:
-```python
-def decrypt(message):
-  pass
+x = 10  # horizontal coordinate (ok)
 ```
