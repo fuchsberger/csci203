@@ -60,6 +60,59 @@ Reflection Question: What would have happend if we accidentally had `return Fals
 
 Write a function that returns the number of occurences of `0` in a list of numbers.
 
+```python
+def count_zero(numbers):
+  # TODO: Code this
+  pass
+```
+
+The solution can be found in `exercise1.py`
+
+## Exercise 2
+
+Assuming numbers are sorted in ascending order can we make this algorithm more efficient?
+
+```python
+def count_zero_sorted(numbers):
+  # TODO: code this
+  pass
+```
+
+The solution can be found in `exercise2.py`
+
+# Properly Testing a function
+
+A good way to test a function is to create a separate test file and then import your actual file (make sure its in the same directory):
+
+```python
+# exercise2_tests.py
+
+from exercise2 import count_zero_sorted
+
+def main():
+
+  expected = 2
+  actual = zero_count_sorted([-2, -1, 0, 0, 1, 2])
+
+  print("Testing zero_count_sorted([-2, -1, 0, 0, 1, 2])")
+  print("Expected: ", expected)
+  print("Actual: ", actual)
+
+
+main()
+```
+
+Advantages:
+
+- Keeps your main code and tests separate.
+- running your main function in `exercise1.py` doesn't also run tests.
+- You don't have to clean up (comment in and out) your tests
+- clear separation of responsibilities
+
+Disadvantages:
+
+- slightly higher overhead / complexity (need to work in a second file)
+
 # Returning multiple things at a time:
 
 ```python
@@ -74,3 +127,25 @@ a, b  = swap(a, b)
 # will print: False, True
 print(a, b)
 ```
+
+## Exercise 3
+
+Modify `exercise2.py` such that it returns 2 things:
+
+- the count of `O`s as before
+- the number of loop iterations we checked
+
+Also properly create a test file for `exercise3.py`.
+
+Here is a test that should pass when running your function
+
+```python
+expected = 2, 5
+actual = zero_count_sorted2([-2, -1, 0, 0, 1, 2])
+
+print("Testing zero_count_sorted2([-2, -1, 0, 0, 1, 2])")
+print("Expected: ", expected)
+print("Actual: ", actual)
+```
+
+The solution can be found in `exercise3.py` and `exercise3_tests.py`.
