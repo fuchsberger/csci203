@@ -38,7 +38,7 @@ Accumulators allow us to simulate:
 
 **They let us model change over time.**
 
-Lets solve a real problem for [Skyrim Players](https://en.uesp.net/wiki/Skyrim:Trainers#Notes). The wiki states:
+Lets solve a real problem from a video game. The wiki states the following about [training costs in Skyrim](https://en.uesp.net/wiki/Skyrim:Trainers#Notes):
 
 - For advancement of skills less than or equal to `50`:
 
@@ -69,4 +69,23 @@ def training_cost(start_level, end_level):
   Return value:
     - integer >= 0 representing the gold cost
   """
+  # TODO
+  pass
 ```
+
+Notice that i have already given you a test file (`exercise1_tests.py`) to get started. Add a second test that shows the total gold cost to level from `15` to `100`.
+
+## Exercise 2
+**Clarification:** This is not an excises I would expect you to solve independently in a limited time frame in class. We'll do it together.
+
+Write a program that asks for
+- an inital saving amount
+- your current age
+- your annual salary
+
+and returns your projected income when you retire at `65`.
+
+Assume
+- a `8%` yearly interest (paid out yearly)
+- your salary stayss constant (no job losses or promotions)
+- ignore inflation
