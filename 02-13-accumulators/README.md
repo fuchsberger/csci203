@@ -1,6 +1,7 @@
 # What Is an Accumulator?
 
 An accumulator is a variable that:
+
 - Starts with an initial value
 - Changes repeatedly inside a loop
 - “Accumulates” (builds up) a result over time
@@ -18,9 +19,11 @@ print(total)
 # What happens?
 # we add 1 + 2 + 3 + 4 + 5 for a total of 15
 ```
+
 Potential Exam question: Create a tracetable for the algorithm above.
 
 # Why are accumulators important?
+
 Accumulators allow us to simulate:
 
 - Game scoring
@@ -53,7 +56,8 @@ Where `n` is the number of times you wish to train and `b` is the current level 
 
 E.g.: If you wish to train a particular skill from level `20` to `50` (`b = 20` and `n = 50-20 = 30`) the combined cost (`250+260+270+...+540`) would be `30(10*20 + 5*30 + 45) = 11850`.
 
-Lets design the following function and test it:
+Lets design (and properly test) the following function and test it:
+
 ```python
 def training_cost(start_level, end_level):
   """Returns the total gold cost to train a skill from start_level` to `end_level`.
