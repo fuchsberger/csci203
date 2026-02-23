@@ -59,6 +59,7 @@ Reflection Question: What would have happend if we accidentally had `return Fals
 ## Exercise 1
 
 Write a function that returns the number of occurences of `0` in a list of numbers.
+dfssdfsdfsdfs sdf **bold**
 
 ```python
 def count_zero(numbers):

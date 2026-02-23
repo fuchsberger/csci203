@@ -75,10 +75,14 @@ def training_cost(start_level, end_level):
 
 Notice that i have already given you a test file (`exercise1_tests.py`) to get started. Add a second test that shows the total gold cost to level from `15` to `100`.
 
+The solution can be found under `training_cost.py`
+
 ## Exercise 2
+
 **Clarification:** This is not an excises I would expect you to solve independently in a limited time frame in class. We'll do it together.
 
 Write a program that asks for
+
 - an inital saving amount
 - your current age
 - your annual salary
@@ -86,6 +90,7 @@ Write a program that asks for
 and returns your projected income when you retire at `65`.
 
 Assume
+
 - a `8%` yearly interest (paid out yearly)
 - your salary stayss constant (no job losses or promotions)
 - ignore inflation
