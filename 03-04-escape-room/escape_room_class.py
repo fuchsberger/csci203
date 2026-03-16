@@ -16,16 +16,56 @@ root.focus_force()
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-def one_step(x, y, step_length):
+def one_step(x, y, step_length, width):
+
+
     r = random.random()       # randomly choose a direction
     if r < 0.25:              # if r is in [0.0, 0.25), then
         x = x + step_length   #   move east and skip ahead
+
+        if x >= width:
+            x -= step_length
+
+            r = random.random()
+            if r < 0.5:
+                y += step_length
+            else:
+                y -= step_length
+
+
     elif r < 0.5:             # otherwise, if r is in [0.25, 0.5), then
         y = y + step_length   #   move north and skip ahead
+
+        if y >= width:
+            y -= step_length
+
+            r = random.random()
+            if r < 0.5:
+                x += step_length
+            else:
+                x -= step_length
     elif r < 0.75:            # otherwise, if r is in [0.5, 0.75), then
         x = x - step_length   #   move west and skip ahead
+
+        # if x <= -width:
+        #     x += step_length
+
+        #     r = random.random()
+        #     if r < 0.5:
+        #         y += step_length
+        #     else:
+        #         y -= step_length
     else:                     # otherwise,
         y = y - step_length   #   move south
+
+        if y <= -width:
+            y += step_length
+
+            r = random.random()
+            if r < 0.5:
+                x += step_length
+            else:
+                x -= step_length
 
     return x, y
 
@@ -67,14 +107,14 @@ def escape(width):
 
     x = 0                          # position of the particle
     y = 0
-    step_length = width / 20       # length of a step
+    step_length = width / 5       # length of a step
     escaped = False                # whether the particle has escaped
     num_steps = 0
     while not escaped:
         num_steps = num_steps + 1
 
         prev_x, prev_y = x, y
-        x, y = one_step(x, y, step_length)
+        x, y = one_step(x, y, step_length, width)
 
         # if we escape through the gap
         if x <= -width and y <= gap and y >= -gap:
