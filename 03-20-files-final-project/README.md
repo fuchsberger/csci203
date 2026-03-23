@@ -60,7 +60,7 @@ def get_content(file):
     return text
 ```
 
-### Main Menu FInal Project Wrapper Template
+### Main Menu Final Project Wrapper Template
 
 This is a suggested approach to organize your program into a format that supports multiple user-selected main features.
 
