@@ -15,8 +15,7 @@ def main():
 
 def extract_locations():
     """
-    Returns a list of earthquakes in the format
-    [latitude, longitude, magnitude] from the API source.
+    Returns a list of (latitude, longitude) pairs from the API source.
     """
     response = requests.get(URL)
     response.raise_for_status()  # raises an error if the request failed
