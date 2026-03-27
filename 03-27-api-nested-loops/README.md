@@ -1,8 +1,41 @@
 ## Nested For Loops
 
+![Tic Tac Toe](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJd6tIrqyz0C3Quc9ohvlqK6DhvTXO2gJKQA&s)
+
+Lets start by representing a game state of Tic Tac Toe in a format that the computer can read more easily. Since we always have `3` rows and `3` columns we can use a string or list, where
+
+- `0` indicates an empty slot
+- `1` indicates slot occupied by player 1 (x)
+- `2` indicates slot occupied by player 2 (o)
+
 ```python
-# TODO in class
+"010221100"
+[0, 1, 0, 2, 2, 1, 1, 0, 0]
 ```
+
+Because this game always has `3` rows and `3` columns the `index` in that list/string identifies the actual game field precicely. For example index `2` always refers to the top-right corner field.
+
+While a string is fine we could also choose a nested list for storage:
+
+```python
+[
+  [0, 1, 0],
+  [2, 2, 1],
+  [1, 0, 0]
+]
+```
+
+A nested list is a list that contains other lists.
+This is more human readable and comes with advantages and disadvantages.
+
+We are going to write two functions now
+
+- to convert a list in the format above into a nested list
+- convert a nested list back into a singular list
+
+## Nested List indexing and looping
+
+`TODO`
 
 ## API data
 
