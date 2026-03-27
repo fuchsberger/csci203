@@ -33,9 +33,89 @@ We are going to write two functions now
 - to convert a list in the format above into a nested list
 - convert a nested list back into a singular list
 
-## Nested List indexing and looping
+```python
+#  [0, 1, 0, 2, 2, 1, 1, 0, 0]
 
-`TODO`
+#  [
+#    [0, 1, 0],
+#    [2, 2, 1],
+#    [1, 0, 0]
+#  ]
+
+def index_to_coordinates(index:int):
+    x = index % 3
+    y = index // 3
+
+    return (x, y)
+
+def coordinates_to_index(coords:tuple):
+    x, y = coords
+    # x = 2, y = 0 --> 2 (top right)
+    # x = 0, y = 2 --> 6 (bottom left)
+    return x + 3 * y
+
+def tests():
+
+    assert index_to_coordinates(2) == (2, 0)
+    assert coordinates_to_index((2, 0)) == 2
+
+if __name__ == "__main__":
+    tests()
+```
+
+## Nested List indexing
+
+```python
+game =   [
+    [0, 1, 0],
+    [2, 2, 1],
+    [1, 0, 0]
+  ]
+
+# get value at x, y: game[y][x]
+print(game)
+print(game[0])
+print(game[0][2])
+```
+
+## Nested Loops
+
+```python
+game =   [
+    [0, 1, 0],
+    [2, 2, 1],
+    [1, 0, 0]
+  ]
+
+# sum up all numbers in the nested list
+result = 0
+
+for row in game:
+    for value in row:
+        result += value
+
+print(result)
+```
+
+### Sampe Exam Question
+
+What will be printed?
+
+```python
+for i in range(3, 0, -1)    # 3, 2, 1
+    for j in range(3):      # 0, 1, 2
+        print(i + j)
+
+# i = 3, j = 0 -> 3
+# i = 3, j = 1 -> 4
+# i = 3, j = 2 -> 5 done with first inner loop
+# i = 2, j = 0 -> 2
+# i = 2, j = 1 -> 3
+# i = 2, j = 2 -> 4 done with the second inner loop
+# i = 1, j = 0 -> 1
+# i = 1, j = 1 -> 2
+# i = 1, j = 2 -> 3 done with the second inner loop
+```
 
 ## API data
 
@@ -66,6 +146,8 @@ You can then run `starting_code.py` in IDLE. You should see an output like this:
 _This is a very long list containing all the earthquakes measured since yesterday including their magnitude on the richter scale!_
 
 ## Scatter Plot
+
+_We didn't get to this part in class, will do (maybe) on Wednesday_
 
 Lets see if we can plot them in a scatter plot:
 
