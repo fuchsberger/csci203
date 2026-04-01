@@ -1,3 +1,12 @@
+# Text Analysis
+
+Lecture taught by visiting Candidate **Dr. Buffum**.
+
+We covered an example analyzing average sentence length in presidential speeches using the request library (to pull data from a web source).
+
+Final program:
+
+```python
 import requests
 
 import matplotlib.pyplot as pyplot
@@ -45,3 +54,4 @@ def mean(data: list[str]) -> float:
     return total / len(data)
 
 main()
+```
