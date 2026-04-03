@@ -1,7 +1,5 @@
 # Text Analysis
 
-Lecture taught by visiting Candidate **Dr. Buffum**.
-
 We covered an example analyzing average sentence length in presidential speeches using the request library (to pull data from a web source).
 
 Final program:
