@@ -1,11 +1,36 @@
 # Exam 3 Prep List
 
-- binary search (completely understanding it, time complexity)
+- linear & binary search (completely understanding it, time complexity)
+
 - time complexity
   - 7 levels of efficiency
-  - determining any functions time complexity (information on the time complexity of library functions will be provided)
+  - determining any functions time complexity in Big O notation (information on the time complexity of library functions will be provided, if needed)
   - best/worst/average case time complexity
-  -
+  - compare two algorithms
+
+- lists and strings
+  - indexing
+  - slicing
+  - in operator, range
+  - searching for an item
+
+- aliasing vs referencing
+  - mutability / immutability
+  - id() function to determine memory address
+
+- smoothing data
+
+- modulo operator (remainder) and integer division
+
+- nested loops
+  - continue statement
+  - break statement
+
+- files
+  - open, close, read, write
+  - open mods (r, w, a)
+
+- writing unittests
 
 ## Linear Search
 
