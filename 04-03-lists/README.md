@@ -6,4 +6,4 @@ Topics covered:
 - copying
 - immutable vs mutable referencing
 
-Pleaes find todays lecture notes under `slides.pdf`. You can download the file from Github.
+Please find todays lecture notes under `slides.pdf`. You can download the file from Github.
