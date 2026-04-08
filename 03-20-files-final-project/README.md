@@ -53,8 +53,8 @@ text = f.write("line 2")
 After you are done processing a file you should close it properly to free memory resources:
 
 ```python
-def get_content(file):
-    f = open("filename", "r")
+def get_content(filename):
+    f = open(filename, "r")
     text = f.read()
     f.close()
     return text
