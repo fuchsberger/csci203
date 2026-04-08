@@ -21,6 +21,8 @@
 - smoothing data
 
 - modulo operator (remainder) and integer division
+  - checksum
+  - ceasar cipher
 
 - nested loops
   - continue statement
@@ -30,7 +32,7 @@
   - open, close, read, write
   - open mods (r, w, a)
 
-- writing unittests
+- assert, try/except
 
 ## Linear Search
 
