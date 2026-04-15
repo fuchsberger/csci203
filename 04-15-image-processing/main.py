@@ -12,13 +12,13 @@ def main():
     # set_contrast(oldPixels, newImage, newPixels, 255)
     # grainy(oldPixels, newImage, newPixels)
 
-    # invertSpot(oldPixels, newImage, newPixels, x1, y1, x2, y2)
+    # invertSpot(oldPixels, newImage, newPixels, 100, 200, 200, 400)
 
     # mirrorHalf(oldPixels, newImage, newPixels)
 
     # combined(oldPixels, newImage, newPixels)
 
-    # blur(oldPixels, newImage, newPixels, window)
+    # blur(oldPixels, newImage, newPixels, 8)
 
 
 def boost_red(oldPixels, newImage, newPixels):
@@ -31,35 +31,23 @@ def boost_red(oldPixels, newImage, newPixels):
     save_image(newImage, "myImage-red.jpg")
 
 def invert(oldPixels, newImage, newPixels):
-    for i in range(newImage.size[0]):
-        for j in range(newImage.size[1]):
-            # TODO
-            pass
-
-    save_image(newImage, "myImage-invert.jpg")
+    pass
 
 def grayscale(oldPixels, newImage, newPixels):
-    for i in range(newImage.size[0]):
-        for j in range(newImage.size[1]):
-            # TODO
-            pass
-
-    save_image(newImage, "myImage-grayscale.jpg")
+    pass
 
 def set_contrast(oldPixels, newImage, newPixels, C):
-    for i in range(newImage.size[0]):
-        for j in range(newImage.size[1]):
-            # TODO
-            pass
-
-    save_image(newImage, "myImage-set-contrast.jpg")
+    pass
 
 def grainy(oldPixels, newImage, newPixels):
-    for i in range(newImage.size[0]):
-        for j in range(newImage.size[1]):
-            # TODO
-            pass
-    save_image(newImage, "myImage-set-contrast.jpg")
+    pass
+
+def invertSpot(oldPixels, newImage, newPixels, x1, y1, x2, y2):
+    pass
+
+def blur(oldPixels, newImage, newPixels, window):
+    pass
+
 
 
 # Helpers below, do not touch
