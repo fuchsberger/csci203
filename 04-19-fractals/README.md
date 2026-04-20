@@ -103,6 +103,8 @@ G'(N) = + G - G'G' -- G' - G ++ G + G'
 
 ![Gosper Curve](gosper.svg)
 
+**Objective** Draw the Gosper Curve at order `3`.
+
 # Challenge: Sirpinski Triangle (medium)
 
 ![Sierpinski Gasket](./sierpinski_gasket.gif)
@@ -119,6 +121,8 @@ Rewriting Rules:
 F -> FF
 X -> -- FXF ++ FXF ++ FXF--
 ```
+
+**Objective** Draw the Sirpinski Triangle at order `5`.
 
 ## Challenge: Dragon Curve (hard)
 
@@ -140,4 +144,4 @@ Y -> - F X - Y
 
 Also the angle is now 90 Degrees instead of 60.
 
-** Objective** Draw the Dragon Curve at order `8`.
+**Objective** Draw the Dragon Curve at order `8`.
