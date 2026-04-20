@@ -90,7 +90,7 @@ Koch(2, 200)
 
 Please find the entire program under `snowflake.py`.
 
-## Gosper Curve
+## Challenge: Gosper Curve (easy)
 
 **Activity**: Draw the follwing fractal at level 3 using the Lindenmayer rules learned above:
 
@@ -102,3 +102,42 @@ G'(N) = + G - G'G' -- G' - G ++ G + G'
 ```
 
 ![Gosper Curve](gosper.svg)
+
+# Challenge: Sirpinski Triangle (medium)
+
+![Sierpinski Gasket](./sierpinski_gasket.gif)
+
+Initial String
+
+```
+F X F -- FF -- FF
+```
+
+Rewriting Rules:
+
+```
+F -> FF
+X -> -- FXF ++ FXF ++ FXF--
+```
+
+## Challenge: Dragon Curve (hard)
+
+![Dragon Curve](./dragon.svg)
+**Note:** The above depicton shows orders 1 to 9 with corners rounded to emphasize the path taken.
+
+Initial String
+
+```
+F X
+```
+
+Rewriting Rules:
+
+```
+X -> X + Y F +
+Y -> - F X - Y
+```
+
+Also the angle is now 90 Degrees instead of 60.
+
+** Objective** Draw the Dragon Curve at order `8`.
