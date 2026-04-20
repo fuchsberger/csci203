@@ -126,8 +126,7 @@ X -> -- FXF ++ FXF ++ FXF--
 
 ## Challenge: Dragon Curve (hard)
 
-![Dragon Curve](./dragon.svg)
-**Note:** The above depicton shows orders 1 to 9 with corners rounded to emphasize the path taken.
+![Dragon Curve](./dragon.png)
 
 Initial String
 
