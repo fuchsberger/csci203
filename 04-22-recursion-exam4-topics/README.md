@@ -59,6 +59,63 @@ Please consult the updated [Project Rubric](https://docs.google.com/spreadsheets
 
 ### End of Semester Easing
 
-- I will scratch homeworks (not readings) in the last week to give you more time to focus on your projects instead. They will still be published as _optional_ in case you like to attempt them for exam preparation.
+- I will scratch homework exercises (not readings) after exam 4 to give you more time to focus on your projects instead. They will still be published as _optional_ in case you like to attempt them for exam preparation.
 - During classes following exam 4 we will spend aproximately 20-30 minutes introducing the designated topic and then switch over to worktime for your final projects. Be encouraged to ask questions during this period.
 - Recursive Binary Search and Tower of Hanoi will still be viable final exam topics but only to the extend we covered them in class and in the readings.
+
+# Recursion
+
+A recursive function is a function that has at least one base case and one recursive case:
+```python
+def factorial(n):
+    # Base case: factorial of 0 or 1 is 1
+    if n == 0 or n == 1:
+        return 1
+    # Recursive case: n * (n-1)!
+    else:
+        return n * factorial(n - 1)
+
+# Example usage
+print(factorial(5))  # Output: 120
+```
+A recursive function must eventually always reach a base case, otherwise its becomes an infinte loop. Unlike iteration this causes a `RecursionError` exception after a certain depth (usually 5000).
+
+## Activity
+Convert the iterative `multiply()` function to a recursive version:
+
+```python
+def multiply(x, y):
+  total = 0
+
+  for i in range(y):
+    total += x
+
+  return total
+```
+
+```python
+def multiply_rec(x, y):
+  # TODO
+  pass
+```
+
+## Recursive Helper functions
+Sometimes when designing functions we end up with "trigger" function and a recursive helper function:
+
+```python
+def sum_list(numbers):
+    # trigger function
+    return sum_helper(numbers, 0)
+
+def sum_helper(numbers, index):
+    # recursive helper function
+    if index == len(numbers):
+        return 0
+    return numbers[index] + sum_helper(numbers, index + 1)
+
+print(sum_list([4, 7, 2, 5]))   # 18
+```
+
+The purpose of this "split" is mainly to simplify (reduce) the required parameters when callin the recursive function.
+
+
