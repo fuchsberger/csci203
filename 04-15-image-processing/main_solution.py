@@ -105,7 +105,7 @@ def blur(oldPixels, newImage, newPixels, window):
                     sum_r += r
                     sum_g += g
                     sum_b += b
-
+                # newPixels[i][j]
 
                 newPixels[i, j] = (round(sum_r/window), round(sum_g/window), round(sum_b/window))
 

@@ -27,7 +27,7 @@ def KochHelper(t, n, length):
     t.left(60)
     KochHelper(t, n-1, length/3)
 
-Koch(2, 200)
+Koch(4, 200)
 
 screen.update()
 turtle.exitonclick()
