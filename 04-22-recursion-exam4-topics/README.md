@@ -44,10 +44,17 @@
 - given a (simple) Lindenmayer system, be able to draw the resulting graphic on level 1, 2, and 3
 - given a (simple) graphic (level 0, 1, and 2), understand the recursive pattern ands derive the recursive function in either Lindenmayer Notation or Python code (student's choice)
 
-# Project - Change in the Project Rubric
+# Project - Changes
 
-Please consult the [Project Rubric](https://docs.google.com/spreadsheets/d/1e6pTpGP58kv9knUV6GHU1ibA9mT7kVpu-F3mV9KHpco/edit?gid=1238942540#gid=1238942540)
+Please consult the updated [Project Rubric](https://docs.google.com/spreadsheets/d/1e6pTpGP58kv9knUV6GHU1ibA9mT7kVpu-F3mV9KHpco/edit?gid=1238942540#gid=1238942540)
 
-- I reduced the required number of choices from 5 to 3 and slighlty modified the rubric to accomodate for that change.
+- I reduced the required number of choices from `5` to `3` and slighlty modified the rubric to accomodate for that change.
 - This should allow you more flexibility to focus on what you want to do with less pressure on what you have to do.
 - **Reminder:** Keep your project simple, I am looking primarily for your ability to apply what you have learned in your own context, not something grand and impressive!
+- Progress Report 2 has been published. This will be the last progress report before project is due.
+
+### End of Semester Easing
+
+- I will scratch homeworks (not readings) in the last week to give you more time to focus on your projects instead. They will still be published as _optional_ in case you like to attempt them for exam preparation.
+- During classes following exam 4 we will spend aproximately 20-30 minutes introducing the designated topic and then switch over to worktime for your final projects. Be encouraged to ask questions during this period.
+- Recursive Binary Search and Tower of Hanoi will still be viable final exam topics but only to the extend we covered them in class and in the readings.
