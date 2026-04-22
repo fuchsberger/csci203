@@ -40,6 +40,7 @@
 - create (simple) recursive functions given a description of how it should work
 - create (simple) recursive functions given the iterative equivalent
 - create (simple) recursive functions given an example output sequence
+- be able to determine the output of a recursive function given the function definition and a function call.
 - analyze the time complexity of recursive functions
 
 ### Page 4 - Fractals
