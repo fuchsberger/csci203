@@ -26,7 +26,7 @@
     - use them in the contexts seen in the examples (e.g)
     - time complexity for such and and similar operations
 
-- <s>Game of Life -like state change</s>
+- <s>Game of Life</s>
   - <s>given (potentially modified) game of life rules, a game state (white/black cells), and a 5x5 grid be able to draw the next game state</s>
 
 ### Page 2 - Image Processing and Nested Structures
