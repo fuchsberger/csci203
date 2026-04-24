@@ -57,18 +57,18 @@ assert count("ABBA", "BB") == 0
 
 ## Recursive Spiral
 
-Recursively draw a spiral in Turtle that gets bigger (until the length of the side reaches `max_length` pixel)
+Recursively draw a spiral in Turtle that gets bigger (until the length of the side reaches `max_length` pixel). You may assume the increment each recursion is `5`.
 
 ```python
 import turtle
 
 g = turtle.Turtle()
 
-def spiral(t, increment, max_length):
+def spiral(t, current_length, max_length):
   # TODO
 
 # tests
-spiral(g, 5, 120)
+spiral(g, 0, 120)
 ```
 
 After coding this example reflect:
@@ -127,6 +127,7 @@ Depth First Search
 We can recursively find a path in a maze by taking a step and backtracking if that step lead to a dead end.
 
 We set up a maze via a nested list:
+
 ```python
 # 1 = open path, 0 = wall
 grid = [
@@ -151,4 +152,5 @@ Please see the code under `dfs.py`. Run it in IDLE!
 The implementation currently doesn't look for a final destination but explores all paths that can be taken from the starting coordinate.
 
 ### Challenge
+
 Create `dfs2.py` which takes in an additional parameter (`destination`) which is a tuple in the format `(x, y)`. If the algorithm encounters the final destination it should immediately stop and draw the path to it. This is guaranteed to be the shortest path! :)
