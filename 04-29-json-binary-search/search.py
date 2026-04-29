@@ -16,8 +16,22 @@ def binary_search(items, item):
 
     return None
 def binary_rec(items, item):
-    # TODO
-    pass
+    left = 0
+    right = len(items) - 1
+    bin_rec_helper(items, item, left, right)
+
+def bin_rec_helper(items, item, left, right):
+    if left > right:
+        return None
+
+    mid = (right - left) // 2
+
+    if item < items[mid]:
+        bin_rec_helper(items, item, left, mid - 1)
+    elif item > items[mid]:
+        bin_rec_helper(items, item, mid+1, right)
+    else:
+        return mid
 
 
 def test_search():
