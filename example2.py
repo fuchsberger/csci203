@@ -1,12 +1,16 @@
 import turtle
 
-radius = int(input("Radius: "))
+t = turtle.Turtle()
 
-x = int(input("x coordinate: "))
-y = int(input("y coordinate: "))
+def fu(t, depth, length):
+  if depth == 0:
+    t.forward(length)
+  else:
+    t.forward(length)
+    t.left(120)
+    fu(t, depth - 1, length / 2)
 
-# draw a circle with the given radius at the given coordinate
-# draw more circle getting smaller and smaller on top of that circle
 
-turtle.setpos(x, y)
-turtle.circle(radius)
+fu(t, 4, 100)
+
+input()
