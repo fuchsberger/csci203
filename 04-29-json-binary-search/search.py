@@ -3,7 +3,7 @@ def binary_search(items, item):
     right = len(items) - 1
 
     while left <= right:
-        mid = (right - left) // 2
+        mid = (right + left) // 2
 
         if  item < items[mid]:
           right = mid - 1
