@@ -24,7 +24,7 @@ def bin_rec_helper(items, item, left, right):
     if left > right:
         return None
 
-    mid = (right - left) // 2
+    mid = (right + left) // 2
 
     if item < items[mid]:
         bin_rec_helper(items, item, left, mid - 1)
